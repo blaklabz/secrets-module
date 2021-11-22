@@ -7,7 +7,7 @@ provider "helm" {
 ### ELK logging implementation ####
 
 ## build namespace and secrets
-module "oss-elk-namespaces" {
-  source                 = "./oss-elk-namespaces"
+module "oss-elk-secrets" {
+  source                 = "./oss-elk-secrets"
   config_path            = "${var.config_path}"
 }
